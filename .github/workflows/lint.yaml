@@ -2,8 +2,11 @@ name: Lint
 
 on:
   push:
-    paths:
-      - '*.py'
+    branches:    
+      - master
+  pull_request:
+    branches:
+      - master
 
 jobs:
   flake8-lint:
