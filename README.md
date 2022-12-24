@@ -69,3 +69,6 @@ information on using GitHub pull requests.
 - The LaTeX template [ElegantBook](https://elegantlatex.org/) used in this
   project is released under the [LaTeX Project Public License](LICENSE.LPPL),
   v1.3c or later.
+- Both fonts [源流明體](https://github.com/ButTaiwan/genryu-font) and
+  [源樣黑體](https://github.com/ButTaiwan/genyog-font) used in this project
+  are released under the [SIP Open Font License](LICENSE.SIL) Version 1.1.
