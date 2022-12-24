@@ -1,0 +1,6 @@
+[submodule "docs/fonts/genryu-font"]
+	path = docs/fonts/genryu-font
+	url = https://github.com/ButTaiwan/genryu-font
+[submodule "docs/fonts/genyog-font"]
+	path = docs/fonts/genyog-font
+	url = https://github.com/ButTaiwan/genyog-font

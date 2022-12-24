@@ -1,0 +1,61 @@
+\documentclass[10pt,lang=cn,chinesefont=nofont,scheme=chinese,color=green]{elegantbook}
+
+\usepackage{fontspec}
+\usepackage[abspath]{currfile}
+\usepackage[english]{babel}
+
+\setCJKmainfont[
+  Path          = \currfileabsdir,
+  Ligatures     = TeX,
+  UprightFont   = docs/fonts/genryu-font/ttc/GenRyuMin-R.ttc,
+  BoldFont      = docs/fonts/genryu-font/ttc/GenRyuMin-B.ttc,
+]{GenYoMin}
+\setCJKmonofont[
+  Path          = \currfileabsdir,
+  Ligatures     = TeX,
+  UprightFont   = docs/fonts/genyog-font/ttc/GenYoGothic-R.ttc,
+  BoldFont      = docs/fonts/genyog-font/ttc/GenYoGothic-B.ttc,
+]{GenYoMin}
+
+\title{簡明 Python 學習講義：習題解答集}
+\subtitle{前六章習題全解析}
+
+\author{數學計算實驗室 (MCL) 歷屆工讀生}
+\institute{國立中央大學數學系}
+% \date{}
+\version{Alpha}
+\bioinfo{出版年份}{2022}
+
+\extrainfo{化為千縷微風，在那寬廣的天空徐徐吹拂}
+
+\setcounter{tocdepth}{3}
+
+\logo{docs/images/NCULogo.svg.png}
+\cover{docs/images/ncu-math.jpg}
+
+\usepackage{array}
+\newcommand{\ccr}[1]{\makecell{{\color{#1}\rule{1cm}{1cm}}}}
+
+\usepackage{tocloft}
+\cftsetindents{chapter}{0em}{3.5em}
+
+\definecolor{customcolor}{RGB}{70, 86, 60}
+\colorlet{coverlinecolor}{customcolor}
+
+\begin{document}
+
+\maketitle
+\frontmatter
+
+\tableofcontents
+
+\mainmatter
+
+\input{docs/chapters/ch01.tex}
+\input{docs/chapters/ch02.tex}
+\input{docs/chapters/ch03.tex}
+\input{docs/chapters/ch04.tex}
+\input{docs/chapters/ch05.tex}
+\input{docs/chapters/ch06.tex}
+
+\end{document}
