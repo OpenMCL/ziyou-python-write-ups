@@ -1,6 +1,6 @@
 import random
 
-n = int(input())
+n = int(input("> "))
 s = [random.randint(1, 9) for _ in range(n)]
 
 for i in range(10, -1, -1):

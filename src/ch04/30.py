@@ -1,6 +1,6 @@
 import random
 
-n = int(input())
+n = int(input("> "))
 
 ran = [x for x in range(-n + 1, n)]
 random.shuffle(ran)

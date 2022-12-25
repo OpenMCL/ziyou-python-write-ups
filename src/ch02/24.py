@@ -1,4 +1,4 @@
-n = int(input())
+n = int(input("> "))
 for i in range(-n + 1, n):
     for w in range(2):
         s = range(-2 * (n - 1), n) if w == 0 else range(n - 2, -2 * (n - 1) - 1, -1)

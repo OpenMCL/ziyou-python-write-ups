@@ -1,4 +1,4 @@
-n = int(input())
+n = int(input("> "))
 dir = [[1, 1], [-1, 0], [0, -1]]
 m = [[None for j in range(i + 1)] for i in range(n)]
 s, t, c = 0, 0, 0

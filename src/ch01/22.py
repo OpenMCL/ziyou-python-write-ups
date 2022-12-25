@@ -1,4 +1,4 @@
-n = int(input())
+n = int(input("> "))
 print("1" + "-" * ((n - 1) * 4 - 1) + "2" + "-" * ((n - 1) * 4 - 1) + "3")
 for i in range(1, n - 1):
     for j in range(2):

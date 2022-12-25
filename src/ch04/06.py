@@ -1,4 +1,4 @@
-n = int(input())
+n = int(input("> "))
 a = [[None for _ in range(j + 1)] for j in range(n)]
 s, t = 0, 0
 for i in range(int((1 + n) * n / 2)):

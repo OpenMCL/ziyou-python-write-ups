@@ -1,6 +1,6 @@
 import random
 
-n = int(input())
+n = int(input("> "))
 ans = [random.randint(1, 9) for j in range(3)]
 for _ in range(n):
     for j in ans:

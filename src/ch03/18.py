@@ -1,4 +1,4 @@
-n = int(input())
+n = int(input("> "))
 for i in range(-2 * n, 2 * n):
     if i == 0:
         continue

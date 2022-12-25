@@ -1,4 +1,4 @@
-n = int(input())
+n = int(input("> "))
 for i in range(n - 1):
     for _ in range(n):
         print(

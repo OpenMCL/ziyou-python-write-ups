@@ -1,4 +1,4 @@
-n = int(input())
+n = int(input("> "))
 k = n
 for i in range(n):
     print((i + 1) % 10, end=" ")

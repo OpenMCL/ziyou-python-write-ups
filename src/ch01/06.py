@@ -1,4 +1,4 @@
-n = int(input())
+n = int(input("> "))
 a = 4 * (n - 1)
 b = n + 1
 c = 3 * (n - 1) + 1

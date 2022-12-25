@@ -1,6 +1,6 @@
 from random import randint
 
-n = int(input())
+n = int(input("> "))
 # set matrix size
 m1 = [[0 for j in range(n)] for i in range(n)]
 m2 = [[0 for j in range(n)] for i in range(n)]

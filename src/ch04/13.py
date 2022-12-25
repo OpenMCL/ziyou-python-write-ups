@@ -1,6 +1,6 @@
 import random
 
-n = int(input())
+n = int(input("> "))
 r = [i for i in range(-5, 6) if i != 0]
 s = [random.choice(r) for _ in range(n)]
 

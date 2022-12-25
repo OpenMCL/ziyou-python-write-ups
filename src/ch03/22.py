@@ -1,4 +1,4 @@
-n = int(input())
+n = int(input("> "))
 # 屋頂
 for i in range(2 * n + 1):
     if i == 0:

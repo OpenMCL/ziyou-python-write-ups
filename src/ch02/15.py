@@ -1,4 +1,4 @@
-n = int(input())
+n = int(input("> "))
 hh, vv = chr(9472), chr(9474)
 nw, ne, sw, se = chr(9484), chr(9488), chr(9492), chr(9496)
 nw1, ne1, sw1, se1 = se, sw, ne, nw

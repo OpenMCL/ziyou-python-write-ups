@@ -1,4 +1,4 @@
-n = int(input())
+n = int(input("> "))
 for i in range(-n, n + 1):
     t = "/" if i < 0 else "\\"
     m = "\\" if i < 0 else "/"

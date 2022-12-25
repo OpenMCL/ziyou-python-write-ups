@@ -1,6 +1,6 @@
 import random
 
-n = int(input())
+n = int(input("> "))
 ans = str(random.randint(1000, 9999))
 print("  ", ans)
 
