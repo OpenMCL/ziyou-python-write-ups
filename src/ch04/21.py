@@ -5,13 +5,13 @@ import random
 N = 100000
 for n in range(3, 11):
     win1 = 0
-    for i in range(N):
+    for _ in range(N):
         choose = random.randint(1, n)
         if choose == 1:
             win1 += 1
 
     win2 = 0
-    for i in range(N):
+    for _ in range(N):
         choose = random.randint(1, n)
         # 一開始沒選到門才有機會贏
         if choose != 1:

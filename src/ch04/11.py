@@ -29,5 +29,5 @@ for i in dice(n):
     print("{:>3}".format(i), end=" ")
 print()
 print("--- " * (5 * n + 1))
-for i in range(5 * n + 1):
+for _ in range(5 * n + 1):
     print("{:>3}".format(6**n), end=" ")

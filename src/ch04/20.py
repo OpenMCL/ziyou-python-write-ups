@@ -6,7 +6,7 @@ import random
 # 一開始選 2，交換成 3
 # 一開始選 3，交換成羊
 win = 0
-for i in range(10000):
+for _ in range(10000):
     choose = random.randint(1, 3)
     if choose == 1:
         win += 1
@@ -14,7 +14,7 @@ for i in range(10000):
 print("no change:", win / 10000)
 
 win = 0
-for i in range(10000):
+for _ in range(10000):
     choose = random.randint(1, 3)
     if choose != 1:
         win += 1

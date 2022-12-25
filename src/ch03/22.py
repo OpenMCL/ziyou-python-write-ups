@@ -106,7 +106,7 @@ for i in range(5):
         print("|" + "=" * (4 * n - 5) + "|", end=" ")
 print()
 # 腳
-for i in range(2):
+for _ in range(2):
     for j in range(5):
         if j % 2 == 0:
             print("II" + " " * (4 * n - 3) + "II", end=" ")

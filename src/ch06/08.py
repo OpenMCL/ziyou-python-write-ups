@@ -9,7 +9,7 @@ poem = "".join([x for x in poem if x not in ["\n", "，", "。"]])
 # part 1 山山遠隔
 RC = 0  # right count
 LC = len(poem)  # left count
-for i in range(2):
+for _ in range(2):
     t = "　" * 3
     t += poem[RC : RC + 2]
     RC += 2

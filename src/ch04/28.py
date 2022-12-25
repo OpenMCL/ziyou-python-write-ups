@@ -1,13 +1,13 @@
 import random
 
-count = [0 for i in range(6)]
-count1 = [[0] * 5 for x in range(6)]
-for i in range(1600000):
+count = [0 for _ in range(6)]
+count1 = [[0] * 5 for _ in range(6)]
+for _ in range(1600000):
     ran = random.randint(0, 4) * 2 + 1
     cr = int((ran - 1) / 2)
     step = random.randint(0, 1) * 2 - 1
     ran += step
-    for j in range(2):
+    for _ in range(2):
         step = random.randint(0, 1) * 2 - 1
         ran += step
         if ran < 0 or ran > 10:

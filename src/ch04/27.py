@@ -1,7 +1,7 @@
 import random
 
 count = [0 for i in range(6)]
-for i in range(1600000):
+for _ in range(1600000):
     ran = random.randint(0, 4) * 2 + 1
     step = random.randint(0, 1) * 2 - 1
     ran += step
@@ -27,8 +27,8 @@ for i in range(1600000):
 for k in count:
     print("{:>3}".format(int(k / 10000 + 0.5)), end="  ")
 print()
-for k in range(6):
+for _ in range(6):
     print("---", end="  ")
 print()
-for k in range(6):
+for _ in range(6):
     print("160", end="  ")

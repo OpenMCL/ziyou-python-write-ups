@@ -1,6 +1,6 @@
 n = int(input())
 for i in range(-n + 1, n):
-    for k in range(3):
+    for _ in range(3):
         for j in range(-n + 1, n):
             s = abs(j)
             b = abs(i)
