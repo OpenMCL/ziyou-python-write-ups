@@ -25,6 +25,39 @@ or simply run `make docs` if you have `make`.
 
 This would output a pdf file called `main.pdf` at the project root folder.
 
+## Setup Coding Environments
+
+We suggest using Python 3.8 or higher versions.
+
+### Install Dependencies
+
+#### With Poetry (Recommended)
+
+To install all requirements, run the following command:
+
+```sh
+poetry install --with dev
+```
+
+#### With Pip
+
+If you do not have poetry, you can also install all requirements with the
+following command:
+
+```sh
+pip install numpy matplotlib black flake8 flake8-black flake8-bugbear
+```
+
+### Offline Code Linting
+
+After the above installation, you can run `flake8` to check code format:
+
+```sh
+flake8 src
+```
+
+or simply run `make lint` if you have `make`.
+
 ## Contribution
 
 We would love to accept your patches to this project. There are some guidelines
