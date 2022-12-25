@@ -1,4 +1,4 @@
-n = int(input())
+n = int(input("> "))
 # -1 = \ ; -2 = / ; -3 = *
 photo = [[0] * (2 * n + 1) for i in range(2 * n + 3)]
 mid = n + 1

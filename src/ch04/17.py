@@ -1,4 +1,4 @@
-n = int(input())
+n = int(input("> "))
 num = [[None] * n for i in range(n)]
 s, t = 0, 0
 s1, t1 = 0, 0

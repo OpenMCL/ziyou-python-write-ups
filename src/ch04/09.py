@@ -1,4 +1,4 @@
-n = int(input())
+n = int(input("> "))
 pca = [[None] * (i + 1) for i in range(n + 1)]
 for i in range(n + 1):
     for j in range(i + 1):

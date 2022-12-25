@@ -1,4 +1,4 @@
-n = int(input())
+n = int(input("> "))
 
 for k in range(5):
     for j in range(5):

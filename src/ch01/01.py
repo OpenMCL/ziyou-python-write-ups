@@ -1,4 +1,4 @@
-n = int(input())
+n = int(input("> "))
 c = 1
 for i in range(n):
     print(str(i + 1) + "! =", end=" ")

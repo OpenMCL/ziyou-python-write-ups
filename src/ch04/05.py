@@ -1,4 +1,4 @@
-n = int(input())
+n = int(input("> "))
 ans = [[0 for _ in range(n)] for _ in range(n)]
 
 count = 1

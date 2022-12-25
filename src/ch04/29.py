@@ -4,7 +4,7 @@ hh, vv = chr(9473), chr(9475)
 ml, mr = chr(9507), chr(9515)
 nw, ne, sw, se = chr(9487), chr(9491), chr(9495), chr(9499)
 
-n = int(input())
+n = int(input("> "))
 r = random.randint(4, 9)
 ran = [random.randint(0, 1) for x in range(r)]
 door = [

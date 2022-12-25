@@ -1,6 +1,6 @@
 import random
 
-n = int(input())
+n = int(input("> "))
 k = [None for i in range(4)]
 for i in range(len(k)):
     k[i] = random.randint(1, 9)

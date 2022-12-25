@@ -1,4 +1,4 @@
-n1, n2 = int(input()), int(input())
+n1, n2 = int(input("> ")), int(input("> "))
 b = len(str(n1 * n2))
 nl1 = len(str(n1))
 nl2 = len(str(n2))

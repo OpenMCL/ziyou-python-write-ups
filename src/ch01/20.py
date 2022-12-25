@@ -1,4 +1,4 @@
-n = int(input())
+n = int(input("> "))
 for i in range(n):
     for k in range(i + 1):
         print(str(((i * (i + 1)) // 2 + 1 + k) % 10) * (2 * n - 1), end=" ")

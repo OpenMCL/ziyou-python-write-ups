@@ -1,4 +1,4 @@
-n = int(input())
+n = int(input("> "))
 
 m = int((n) / 2)
 for i in range(n + m):

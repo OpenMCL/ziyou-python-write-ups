@@ -1,4 +1,4 @@
-n = int(input())
+n = int(input("> "))
 pp = [
     0x180,
     0x3C0,

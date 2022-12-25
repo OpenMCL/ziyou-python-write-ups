@@ -1,4 +1,4 @@
-n = int(input())
+n = int(input("> "))
 for i in range(n * 2):
     if i < n // 2:
         print(" " * (2 * n + 2 * n - i - 1) + "/" + "_" * (2 * i) + "\\")
