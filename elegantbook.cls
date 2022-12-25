@@ -1128,9 +1128,9 @@
 \fancyfoot[c]{\color{structurecolor}\small\thepage}
 \if@twoside
   \fancyhead[EL]{\color{structurecolor}\cnormal\leftmark}
-  \fancyhead[OR]{\color{structurecolor}\cnormal\rightmark}
+  \fancyhead[OR]{\color{structurecolor}\cnormal\leftmark}
 \else
-  \fancyhead[R]{\color{structurecolor}\cnormal\rightmark}
+  \fancyhead[R]{\color{structurecolor}\cnormal\leftmark}
 \fi
 
 \renewcommand{\headrule}{\color{structurecolor}\hrule width\textwidth}
