@@ -1,6 +1,6 @@
 import random
 
-count = [0 for i in range(6)]
+count = [0 for _ in range(6)]
 for i in range(2, 8):
     for _ in range(pow(6, i)):
         r = [random.randint(1, 6) for j in range(i)]
@@ -10,7 +10,7 @@ for i in range(2, 8):
 for i in range(6):
     print("{:>6}".format(i + 2), end=" ")
 print()
-for i in range(6):
+for _ in range(6):
     print("=" * 6, end="=")
 print()
 for i in range(6):

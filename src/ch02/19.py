@@ -3,7 +3,7 @@ hh, vv = chr(9472), chr(9474)
 nw, ne, sw, se = chr(9484), chr(9488), chr(9492), chr(9496)
 
 for i in range(-n, n + 1):
-    for k in range(n):
+    for _ in range(n):
         for j in range(-n, n):
             if i + j <= -n - 2 or j - i > n or i - j > n + 1 or i + j > n:
                 print(" " * (2), end="")

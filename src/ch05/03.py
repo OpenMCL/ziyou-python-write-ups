@@ -2,7 +2,7 @@ import random
 
 poker = [x for x in range(1, 53)]
 count = 0
-for i in range(1000000):
+for _ in range(1000000):
     random.shuffle(poker)
     poker1 = [poker[m] for m in range(0, 5)]
     poker1.sort(key=lambda x: x % 13)

@@ -14,7 +14,7 @@ for i in range(n * n):
     s += ds[dir]
     t += dt[dir]
 print(" " * 2 * (n - 2), end="  ")
-for i in range(n * n):
+for _ in range(n * n):
     print("{:>2}".format(num[s1][t1]), end="  ")
     if s1 == 0 and t1 != n - 1:
         s1 = t1 + 1

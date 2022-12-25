@@ -1,7 +1,7 @@
 n = int(input())
 for i in range(n * 2 + 1 + n + 1):
     for j in range(n):
-        for k in range(2):
+        for _ in range(2):
             h = n * 3 - i
             w = n - j - 1
             h2 = h - w - 1

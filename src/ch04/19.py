@@ -17,7 +17,7 @@ pp = [
 ]
 s = len(pp)
 for i in range(s):
-    for k in range(n):
+    for _ in range(n):
         for j in range(9, -1, -1):
             if (pp[i] >> j) % 2:
                 print("*", end="")
