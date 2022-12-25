@@ -1,4 +1,6 @@
-n = input()
+n = input("> ")
+m = 0
+nos = [int(s) for s in list(n)]
 num = [
     (15, 9, 9, 9, 15),
     (2, 2, 2, 2, 2),
@@ -11,24 +13,15 @@ num = [
     (15, 9, 15, 9, 15),
     (15, 9, 15, 1, 15),
 ]
-nos = [int(s) for s in list(n)]
 for i in range(5):
-    for k in nos:
-        for j in range(3, -1, -1):
-            if (num[k][i] >> j) % 2:
-                print(k, end="")
-            else:
-                print(" ", end="")
-        print(" ", end="  ")
-    print()
-print("------" * len(nos))
-for i in range(4, -1, -1):
-    print(" " * (5 - i), end="")
-    for k in nos:
-        for j in range(3, -1, -1):
-            if (num[k][i] >> j) % 2:
-                print("*", end="")
-            else:
-                print(" ", end="")
-        print(" ", end="  ")
-    print()
+    for _ in range(2):
+        print(" " * (9 - m), end="")
+        m += 1
+        for k in nos:
+            for j in range(3, -1, -1):
+                if (num[k][i] >> j) % 2:
+                    print(str(k) * 2, end="")
+                else:
+                    print("  ", end="")
+            print(" ", end=" ")
+        print()

@@ -1,6 +1,6 @@
 import random
 
-n = input()
+n = input("> ")
 num = [
     (15, 9, 9, 9, 15),
     (2, 2, 2, 2, 2),
