@@ -1,4 +1,4 @@
-n = input()
+n = input("> ")
 nos = [int(s) for s in list(n)]
 num = [
     (15, 9, 9, 9, 15),

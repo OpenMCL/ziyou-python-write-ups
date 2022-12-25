@@ -1,4 +1,4 @@
-n = input()
+n = input("> ")
 for i in range(int(max(n)) - 1, -1, -1):
     for j in range(len(n)):
         if n[j] == "0":
