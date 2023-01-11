@@ -22,3 +22,5 @@ for i in range(5):
 
 pylab.axis("off")
 pylab.show()
+
+# The code is in wrong order.
