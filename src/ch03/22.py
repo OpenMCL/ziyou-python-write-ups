@@ -1,115 +1,22 @@
-n = int(input("> "))
-# 屋頂
-for i in range(2 * n + 1):
-    if i == 0:
-        for j in range(5):
-            if j % 2 == 0:
-                print(" " * (2 * n - i) + "*" + " " * (2 * n - i), end=" ")
-            else:
-                print(" " * (4 * n - 3), end=" ")
-        print()
-    elif i == 1 or i == 2:
-        for j in range(5):
-            if j % 2 == 0:
-                print(
-                    " " * (2 * n - i)
-                    + "/"
-                    + "-" * (2 * i - 1)
-                    + "\\"
-                    + " " * (2 * n - i),
-                    end=" ",
-                )
-            else:
-                print(" " * (4 * n - 3), end=" ")
-        print()
-    elif i == 3:
-        for j in range(5):
-            if j % 2 == 0:
-                print(
-                    " " * (2 * n - i)
-                    + "/"
-                    + "-" * (2 * i - 1)
-                    + "\\"
-                    + " " * (2 * n - i),
-                    end=" ",
-                )
-            else:
-                print(" " * (2 * n - i + 1) + "*" + " " * (2 * n - i + 1), end=" ")
-        print()
-    else:
-        for j in range(5):
-            if j % 2 == 0:
-                print(
-                    " " * (2 * n - i)
-                    + "/"
-                    + "-" * (2 * i - 1)
-                    + "\\"
-                    + " " * (2 * n - i),
-                    end=" ",
-                )
-            else:
-                print(
-                    " " * (2 * n - i + 1)
-                    + "/"
-                    + "-" * (2 * i - 7)
-                    + "\\"
-                    + " " * (2 * n - i + 1),
-                    end=" ",
-                )
-        print()
-# 門
-for i in range(n):
-    if i == 0:
-        for j in range(5):
-            if j % 2 == 0:
-                print(
-                    "|" + " " * (n + 1) + "_" * (2 * n - 3) + " " * (n + 1) + "|",
-                    end=" ",
-                )
-            else:
-                print("/" + "-" * (4 * n - 5) + "\\", end=" ")
-        print()
-    elif i == 1:
-        for j in range(5):
-            if j % 2 == 0:
-                print(
-                    "|" + " " * n + "|" + " " * (2 * n - 3) + "|" + " " * n + "|",
-                    end=" ",
-                )
-            else:
-                print("|" + " " * n + "_" * (2 * n - 5) + " " * n + "|", end=" ")
-        print()
-    else:
-        for j in range(5):
-            if j % 2 == 0:
-                print(
-                    "|" + " " * n + "|" + " " * (2 * n - 3) + "|" + " " * n + "|",
-                    end=" ",
-                )
-            else:
-                print(
-                    "|"
-                    + " " * (n - 1)
-                    + "|"
-                    + " " * (2 * n - 5)
-                    + "|"
-                    + " " * (n - 1)
-                    + "|",
-                    end=" ",
-                )
-        print()
-# 地板
-for i in range(5):
-    if i % 2 == 0:
-        print("|" + "=" * (4 * n - 1) + "|", end=" ")
-    else:
-        print("|" + "=" * (4 * n - 5) + "|", end=" ")
-print()
-# 腳
-for _ in range(2):
-    for j in range(5):
-        if j % 2 == 0:
-            print("II" + " " * (4 * n - 3) + "II", end=" ")
+n=int(input("> "))
+for i in range(3*n+1,-3,-1):
+    for j in range(2*n-1):
+        if j%2==0: 
+            h=n 
+        else: 
+            h=n-1
+        if i==-1 or i==-2 :
+            print("II"+" "*(4*h-3)+"II",end=" ")
+        elif i==0:
+            print("|"+"="*(4*h-1)+"|",end=" ")
+        elif i<h:
+            print("|"+" "*h,"|"+" "*(2*h-3)+"|"if h>1 else " "," "*h+"|",sep="",end=" ")
+        elif i==h:
+            print("|"+" "*h," "+"_"*(2*h-3)+" "if h>1 else " "," "*h+"|",sep="",end=" ")
+        elif i<=3*h:
+            print(" "*(i-h-1)+"/"+"-"*(6*h-2*i+1)+"\\"+" "*(i-h-1),end=" ")
+        elif i==3*h+1:
+            print(" "*(2*h)+"*"+" "*(2*h),end=" ")
         else:
-            print("II" + " " * (4 * n - 7) + "II", end=" ")
+            print(" "*(4*h+1),end=" ")
     print()
